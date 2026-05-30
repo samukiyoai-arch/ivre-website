@@ -295,9 +295,14 @@ h2 {
 }
 
 .hero-copy h1 {
-  max-width: 780px;
+  max-width: 860px;
   color: var(--white);
-  font-size: clamp(56px, 8vw, 120px);
+  font-size: clamp(48px, 7vw, 104px);
+  line-height: 0.96;
+}
+
+.hero-copy h1 span {
+  display: block;
 }
 
 .hero-copy p:not(.eyebrow),
