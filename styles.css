@@ -1,12 +1,12 @@
 :root {
   --orange: #e7472a;
-  --cream: #e8e5df;
+  --cream: #f7f7f8;
   --white: #ffffff;
   --charcoal: #151515;
-  --muted: #a7a7a0;
-  --soft: #f6f3ee;
+  --muted: #767676;
+  --soft: #ffffff;
   --line: rgba(21, 21, 21, 0.14);
-  --shadow: 0 24px 70px rgba(21, 21, 21, 0.18);
+  --shadow: 0 12px 0 rgba(21, 21, 21, 0.08);
 }
 
 * {
@@ -19,7 +19,11 @@ html {
 
 body {
   margin: 0;
-  background: var(--cream);
+  background:
+    linear-gradient(rgba(21, 21, 21, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 21, 21, 0.045) 1px, transparent 1px),
+    var(--cream);
+  background-size: 72px 72px;
   color: var(--charcoal);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -43,7 +47,7 @@ a {
   z-index: 100;
   padding: 12px 16px;
   background: var(--charcoal);
-  border-radius: 999px;
+  border-radius: 6px;
   color: var(--white);
   font-size: 13px;
   font-weight: 950;
@@ -72,10 +76,10 @@ textarea {
   align-items: center;
   width: min(1180px, calc(100% - 28px));
   padding: 10px 12px 10px 22px;
-  background: rgba(246, 243, 238, 0.9);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
-  border-radius: 999px;
-  box-shadow: 0 10px 40px rgba(21, 21, 21, 0.08);
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 rgba(21, 21, 21, 0.08);
   transform: translateX(-50%);
   backdrop-filter: blur(18px);
 }
@@ -119,7 +123,7 @@ textarea {
   min-height: 46px;
   padding: 0 22px;
   border: 1px solid currentColor;
-  border-radius: 999px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
   font-weight: 950;
@@ -165,10 +169,10 @@ section {
   min-height: 100svh;
   padding-top: 116px;
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.22), transparent 24%),
-    radial-gradient(circle at 88% 14%, rgba(21, 21, 21, 0.18), transparent 26%),
-    linear-gradient(180deg, rgba(21, 21, 21, 0.08), rgba(231, 71, 42, 0)),
+    linear-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px),
     var(--orange);
+  background-size: 72px 72px;
   color: var(--cream);
 }
 
@@ -189,8 +193,8 @@ section {
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid rgba(232, 229, 223, 0.34);
-  border-radius: 30px;
-  box-shadow: 0 34px 90px rgba(21, 21, 21, 0.28);
+  border-radius: 8px;
+  box-shadow: 10px 10px 0 rgba(21, 21, 21, 0.18);
 }
 
 .role-card {
@@ -331,7 +335,7 @@ h2 {
   padding: 16px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 18px;
+  border-radius: 6px;
 }
 
 .hero-stats dt {
@@ -357,17 +361,17 @@ h2 {
   position: absolute;
   inset: 28px -18px -18px 18px;
   background: rgba(21, 21, 21, 0.16);
-  border-radius: 34px;
+  border-radius: 8px;
   content: "";
 }
 
 .product-window {
   position: relative;
   padding: clamp(22px, 3vw, 34px);
-  background: rgba(246, 243, 238, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.42);
-  border-radius: 32px;
-  box-shadow: 0 34px 90px rgba(21, 21, 21, 0.24);
+  border-radius: 8px;
+  box-shadow: 12px 12px 0 rgba(21, 21, 21, 0.16);
   color: var(--charcoal);
   backdrop-filter: blur(18px);
 }
@@ -412,13 +416,13 @@ h2 {
   margin-top: 10px;
   background: var(--white);
   border: 1px solid rgba(21, 21, 21, 0.08);
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 .avatar {
   width: 54px;
   height: 54px;
-  border-radius: 16px;
+  border-radius: 4px;
   background-size: cover;
   background-position: center;
 }
@@ -463,7 +467,7 @@ h2 {
   padding: 0 14px;
   margin-top: 14px;
   background: var(--charcoal);
-  border-radius: 999px;
+  border-radius: 6px;
   color: var(--white);
   font-size: 13px;
   font-weight: 950;
@@ -496,9 +500,9 @@ h2 {
   margin: 0 auto;
   padding: clamp(20px, 4vw, 42px);
   background: var(--charcoal);
-  border-radius: 30px;
+  border-radius: 8px;
   color: var(--cream);
-  box-shadow: var(--shadow);
+  box-shadow: 10px 10px 0 rgba(21, 21, 21, 0.18);
 }
 
 .console-top {
@@ -528,7 +532,7 @@ h2 {
   resize: vertical;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(232, 229, 223, 0.2);
-  border-radius: 22px;
+  border-radius: 6px;
   color: var(--white);
   font-size: clamp(20px, 3vw, 34px);
   font-weight: 850;
@@ -549,7 +553,7 @@ h2 {
   padding: 0 14px;
   background: var(--cream);
   border: 0;
-  border-radius: 999px;
+  border-radius: 6px;
   color: var(--orange);
   font-size: 13px;
   font-weight: 950;
@@ -580,8 +584,8 @@ h2 {
   padding: 20px;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: 24px;
-  box-shadow: 0 16px 42px rgba(21, 21, 21, 0.08);
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 rgba(21, 21, 21, 0.08);
 }
 
 .filters h2 {
@@ -613,7 +617,7 @@ h2 {
   padding: 0 14px;
   background: var(--soft);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 6px;
   color: var(--charcoal);
   font-weight: 800;
 }
@@ -648,8 +652,8 @@ h2 {
   padding: 12px;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: 24px;
-  box-shadow: 0 16px 40px rgba(21, 21, 21, 0.08);
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 rgba(21, 21, 21, 0.08);
 }
 
 .creator-card.premium {
@@ -658,7 +662,7 @@ h2 {
 
 .creator-photo {
   min-height: 250px;
-  border-radius: 18px;
+  border-radius: 6px;
 }
 
 .creator-photo.fitness {
@@ -689,7 +693,7 @@ h2 {
 .badge-row span {
   padding: 6px 9px;
   background: rgba(231, 71, 42, 0.1);
-  border-radius: 999px;
+  border-radius: 4px;
   color: var(--orange);
   font-size: 11px;
   font-weight: 950;
@@ -720,7 +724,7 @@ h2 {
 .creator-card dl div {
   padding: 10px;
   background: var(--soft);
-  border-radius: 14px;
+  border-radius: 4px;
 }
 
 .creator-card dt {
@@ -777,7 +781,7 @@ h2 {
   padding: clamp(22px, 3vw, 34px);
   background: rgba(232, 229, 223, 0.08);
   border: 1px solid rgba(232, 229, 223, 0.18);
-  border-radius: 22px;
+  border-radius: 8px;
 }
 
 .flow-grid span {
@@ -834,8 +838,8 @@ h2 {
 .mock-form {
   padding: 24px;
   background: var(--cream);
-  border-radius: 28px;
-  box-shadow: var(--shadow);
+  border-radius: 8px;
+  box-shadow: 10px 10px 0 rgba(21, 21, 21, 0.16);
 }
 
 .dashboard-card {
@@ -854,7 +858,7 @@ h2 {
 .dashboard-card li {
   padding: 12px 14px;
   background: var(--white);
-  border-radius: 14px;
+  border-radius: 4px;
   color: rgba(21, 21, 21, 0.72);
   font-weight: 850;
 }
