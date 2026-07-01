@@ -4,323 +4,359 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IVRE Creator Marketplace</title>
-    <meta name="description" content="IVRE is an India-first AI influencer marketplace for brands and creators, with protected payments, structured briefs, creator dashboards, and live performance tracking.">
+    <meta name="description" content="IVRE is an AI-powered influencer marketplace for brand discovery, creator onboarding, escrow checkout, campaign approvals, and creator payouts.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#marketplace">Skip to marketplace search</a>
+    <a class="skip-link" href="#ai-search">Skip to AI search</a>
     <header class="site-header">
       <a class="brand-mark" href="#top" aria-label="IVRE home">ivre</a>
       <nav class="nav-links" aria-label="Main navigation">
+        <a href="#ai-search">AI Search</a>
         <a href="#marketplace">Marketplace</a>
-        <a href="#how">How it works</a>
-        <a href="#creators">Creators</a>
-        <a href="#dashboards">Dashboards</a>
+        <a href="#creator">Creators</a>
+        <a href="#dashboard">Dashboard</a>
       </nav>
       <div class="header-actions">
-        <a href="#login">Login</a>
+        <a href="#plans">Plans</a>
         <a class="nav-cta" href="#roles">Join</a>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero-market">
+      <section class="hero-market product-hero">
         <div class="hero-shell">
           <div class="hero-copy">
-            <p class="eyebrow">India-first creator marketplace</p>
+            <p class="eyebrow">AI-powered influencer marketplace</p>
             <h1><span>Influencer marketing,</span><span>but finally structured.</span></h1>
-            <p>AI search, verified creator data, protected checkout, campaign chat, approvals, and payout release in one IVRE workflow.</p>
+            <p>IVRE turns creator discovery, company registration, subscription search, protected checkout, campaign briefs, secure messaging, approvals, verification, and payouts into one front-end operating system.</p>
             <div class="hero-actions">
-              <a class="button button-light" href="#marketplace">Find creators</a>
-              <a class="button button-outline" href="#creator-onboarding">Join as influencer</a>
+              <a class="button button-light" href="#ai-search">Search creators</a>
+              <a class="button button-outline" href="#creator">Create creator profile</a>
             </div>
-            <dl class="hero-stats" aria-label="IVRE marketplace highlights">
+            <dl class="hero-stats" aria-label="IVRE platform highlights">
               <div><dt>1</dt><dd>free AI search</dd></div>
+              <div><dt>72h</dt><dd>creator response window</dd></div>
               <div><dt>10%</dt><dd>platform fee model</dd></div>
-              <div><dt>3-4d</dt><dd>creator response window</dd></div>
             </dl>
           </div>
 
           <aside class="hero-product" aria-label="IVRE product preview">
-            <div class="product-window">
+            <div class="product-window command-window">
               <div class="window-bar"><span></span><span></span><span></span></div>
-              <p class="window-label">Sample AI brief</p>
-              <strong>I need 5 Mumbai fitness creators under ₹15k.</strong>
-              <div class="match-card">
-                <div class="avatar avatar-camera"></div>
-                <div>
-                  <b>Fitness creator match</b>
-                  <span>Example: followers, engagement, reel price</span>
-                </div>
-                <em>₹3.2k</em>
-              </div>
-              <div class="match-card">
-                <div class="avatar avatar-influencer"></div>
-                <div>
-                  <b>UGC creator match</b>
-                  <span>Example: package type and corrections</span>
-                </div>
-                <em>₹5.5k</em>
+              <p class="window-label">Live product preview</p>
+              <strong>Describe the creator. IVRE builds the campaign path.</strong>
+              <div class="pipeline-list">
+                <span>AI search</span>
+                <span>Creator match score</span>
+                <span>Escrow checkout</span>
+                <span>Draft approval</span>
+                <span>Post verification</span>
+                <span>Payout release</span>
               </div>
               <div class="escrow-pill">
                 <span></span>
-                Payment held until client approval
+                Payment held until approval and post verification
               </div>
             </div>
           </aside>
         </div>
 
         <div class="role-split" id="roles" aria-label="Choose your IVRE path">
-          <a class="role-card role-company" href="#marketplace">
-            <span>For Companies</span>
+          <a class="role-card role-company" href="#ai-search">
+            <span>For companies</span>
             <strong>Find the exact creator your campaign needs.</strong>
-            <small>AI search, cart checkout, escrow payments, campaign chat.</small>
+            <small>Natural-language search, saved creators, checkout, escrow, brief, approvals, analytics.</small>
           </a>
-          <a class="role-card role-influencer" href="#creator-onboarding">
-            <span>For Influencers</span>
+          <a class="role-card role-influencer" href="#creator">
+            <span>For influencers</span>
             <strong>Get paid collaborations without chasing brands.</strong>
-            <small>Profile builder, prices, corrections, approval workflow.</small>
+            <small>Profile builder, social links, pricing, portfolio, verification, opportunities, payouts.</small>
           </a>
         </div>
       </section>
 
-      <section class="ai-search" id="marketplace" aria-labelledby="search-title">
+      <section class="platform-modules" aria-labelledby="modules-title">
         <div class="section-heading">
-          <p class="eyebrow">Search like ChatGPT</p>
-          <h2 id="search-title">Tell IVRE what you need. Get matching creators.</h2>
+          <p class="eyebrow">Platform modules</p>
+          <h2 id="modules-title">The new IVRE flow, built into the same front-end system.</h2>
+        </div>
+        <div class="module-grid">
+          <article>
+            <img src="assets/brand-discovery.png" alt="IVRE brand discovery interface">
+            <div>
+              <span>Brand discovery</span>
+              <h3>Search, shortlist, brief.</h3>
+              <p>AI prompt search, filters, creator match scores, company signup and campaign cart.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/creator-studio.png" alt="IVRE creator studio interface">
+            <div>
+              <span>Creator studio</span>
+              <h3>Profile, services, pricing.</h3>
+              <p>Social links, portfolio, pricing, revisions, languages, availability and verification.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/final-dashboard-desktop.png" alt="IVRE final dashboard interface">
+            <div>
+              <span>Operations dashboard</span>
+              <h3>Approve, verify, release.</h3>
+              <p>Secure chat, draft uploads, revision tracking, post proof and escrow payout release.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ai-search product-section" id="ai-search" aria-labelledby="search-title">
+        <div class="section-heading">
+          <p class="eyebrow">Brand journey</p>
+          <h2 id="search-title">What influencer are you looking for?</h2>
+          <p>Describe location, budget, niche, follower range, platform, content type, audience and campaign objective. One search is free; after that the brand creates a company account and chooses a plan.</p>
         </div>
 
-        <div class="search-console">
-          <div class="console-top">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="search-console enhanced-console">
+          <div class="free-search-banner">
+            <strong>1 free AI search</strong>
+            <span>After the first search, create a company account to save creators, brief campaigns and continue searching.</span>
           </div>
-          <label for="ai-query">What's on your mind?</label>
-          <textarea id="ai-query">I want a gym micro-influencer in Mumbai with around 5k followers charging near ₹3,000 for a reel.</textarea>
-          <div class="filter-row" aria-label="Marketplace filters">
-            <button>Instagram</button>
-            <button>Reels</button>
-            <button>Mumbai</button>
-            <button>₹1k-₹5k</button>
-            <button>5k-25k followers</button>
+          <label for="creatorPrompt">AI creator search</label>
+          <textarea id="creatorPrompt">I need a fitness influencer in Mumbai with 5k to 20k followers charging around Rs 3,000 per reel.</textarea>
+          <div class="filter-row" aria-label="Search examples">
+            <button type="button" data-prompt="Gym influencer in Mumbai under Rs 5,000">Gym influencer Mumbai</button>
+            <button type="button" data-prompt="Fashion creators for a clothing brand">Fashion creators</button>
+            <button type="button" data-prompt="Food bloggers in Delhi">Food bloggers Delhi</button>
+            <button type="button" data-prompt="Tech reviewers with 50k followers">Tech reviewers</button>
           </div>
           <div class="console-actions">
-            <a class="button button-orange" href="#creators">Search creators</a>
-            <span>1 free AI search per IP, then credits or subscription.</span>
+            <button class="button button-orange" type="button" id="runSearch">Search creators</button>
+            <span id="matchCopy">AI is ready to recommend creators.</span>
           </div>
+          <div class="ai-results-grid" id="creatorResults" aria-live="polite"></div>
         </div>
       </section>
 
-      <section class="creator-market" id="creators" aria-labelledby="creators-title">
+      <section class="creator-market" id="marketplace" aria-labelledby="marketplace-title">
         <div class="market-layout">
           <aside class="filters" aria-label="Creator filters">
-            <h2 id="creators-title">Find creators</h2>
-            <div>
-              <label>Platform</label>
-              <select>
-                <option>Any</option>
-                <option>Instagram</option>
-                <option>YouTube</option>
-                <option>TikTok-style short video</option>
-              </select>
-            </div>
-            <div>
-              <label>Category</label>
-              <select>
-                <option>Suggested</option>
-                <option>Fitness</option>
-                <option>Food & Drink</option>
-                <option>Fashion</option>
-                <option>Beauty</option>
-              </select>
-            </div>
-            <div>
-              <label>Location</label>
-              <input value="Mumbai, India">
-            </div>
-            <div>
-              <label>Budget</label>
-              <input value="₹3,000 - ₹15,000">
-            </div>
-            <div>
-              <label>Followers</label>
-              <input value="5k - 100k">
-            </div>
-            <a class="button button-dark" href="#checkout">Apply filters</a>
+            <h2 id="marketplace-title">Marketplace</h2>
+            <div><label>Platform</label><select><option>Instagram</option><option>YouTube</option><option>UGC</option></select></div>
+            <div><label>Category</label><select><option>Fitness</option><option>Food</option><option>Fashion</option><option>Tech</option></select></div>
+            <div><label>Location</label><input value="Mumbai, India"></div>
+            <div><label>Budget</label><input value="Rs 3,000 - Rs 15,000"></div>
+            <div><label>Followers</label><input value="5k - 100k"></div>
+            <a class="button button-dark" href="#checkout">Build campaign cart</a>
           </aside>
 
           <div class="creator-content">
             <div class="market-header">
               <div>
-                <p class="eyebrow">Sample matches</p>
-                <h2>AI-ranked creator cards for a brand brief</h2>
+                <p class="eyebrow">Creator buying paths</p>
+                <h2>Direct hire, custom offer, or post campaign.</h2>
               </div>
-              <a href="#premium">IVRE premium creators appear first</a>
+              <a href="#plans">Premium creators appear first when relevant</a>
             </div>
-
-            <div class="creator-grid">
+            <div class="creator-grid product-card-grid">
               <article class="creator-card premium">
                 <div class="creator-photo fitness"></div>
-                <div class="badge-row"><span>IVRE recommended</span><span>Live data</span></div>
-                <h3>Fitness creator</h3>
-                <p>Sample gym micro-influencer profile</p>
+                <div class="badge-row"><span>96% match</span><span>Verified</span></div>
+                <h3>Aarav Kapoor</h3>
+                <p>@aaravmoves - Fitness reels - Mumbai</p>
                 <dl>
-                  <div><dt>Followers</dt><dd>8.4k</dd></div>
+                  <div><dt>Followers</dt><dd>18.4k</dd></div>
                   <div><dt>Engagement</dt><dd>7.8%</dd></div>
-                  <div><dt>Reel</dt><dd>₹3,200</dd></div>
+                  <div><dt>Reel</dt><dd>Rs 3k</dd></div>
                 </dl>
-                <button>Add to cart</button>
+                <button type="button" data-add-creator="Aarav Kapoor">Add to cart</button>
               </article>
-
               <article class="creator-card">
                 <div class="creator-photo food"></div>
-                <div class="badge-row"><span>Responds fast</span><span>2 corrections</span></div>
-                <h3>Food creator</h3>
-                <p>Sample cafe and food profile</p>
+                <div class="badge-row"><span>93% match</span><span>UGC</span></div>
+                <h3>Meera Rao</h3>
+                <p>@platesbymeera - Food UGC - Delhi</p>
                 <dl>
-                  <div><dt>Followers</dt><dd>22.1k</dd></div>
-                  <div><dt>Engagement</dt><dd>5.9%</dd></div>
-                  <div><dt>Reel</dt><dd>₹8,000</dd></div>
+                  <div><dt>Followers</dt><dd>42.1k</dd></div>
+                  <div><dt>Engagement</dt><dd>6.1%</dd></div>
+                  <div><dt>Reel</dt><dd>Rs 5.5k</dd></div>
                 </dl>
-                <button>Add to cart</button>
+                <button type="button" data-add-creator="Meera Rao">Add to cart</button>
               </article>
-
               <article class="creator-card">
                 <div class="creator-photo fashion"></div>
-                <div class="badge-row"><span>UGC</span><span>1 correction</span></div>
-                <h3>UGC creator</h3>
-                <p>Sample fashion and lifestyle profile</p>
+                <div class="badge-row"><span>91% match</span><span>Premium</span></div>
+                <h3>Sana Nair</h3>
+                <p>@styledbysana - Fashion shoots - Bengaluru</p>
                 <dl>
-                  <div><dt>Followers</dt><dd>14.7k</dd></div>
-                  <div><dt>Engagement</dt><dd>6.4%</dd></div>
-                  <div><dt>Reel</dt><dd>₹5,500</dd></div>
+                  <div><dt>Followers</dt><dd>67.8k</dd></div>
+                  <div><dt>Engagement</dt><dd>5.9%</dd></div>
+                  <div><dt>Reel</dt><dd>Rs 8k</dd></div>
                 </dl>
-                <button>Add to cart</button>
+                <button type="button" data-add-creator="Sana Nair">Add to cart</button>
               </article>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="registration-section" id="register" aria-labelledby="register-title">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">Company registration</p>
+            <h2 id="register-title">Create the brand account after the free search.</h2>
+            <p>Company details unlock saved creators, campaign carts, billing, team access, briefs, messages, analytics and order history.</p>
+          </div>
+          <form class="mock-form dense-form" aria-label="Company registration form">
+            <label>Company name<input placeholder="Company name"></label>
+            <label>Website<input placeholder="https://company.com"></label>
+            <label>Industry<input placeholder="Fashion, food, technology"></label>
+            <label>Company type<select><option>Brand</option><option>Marketing Agency</option><option>Freelancer</option><option>Startup</option></select></label>
+            <label>Business email<input type="email" placeholder="you@company.com"></label>
+            <a class="button button-dark" href="#plans">Create account</a>
+          </form>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="plans" aria-labelledby="plans-title">
+        <div class="section-heading">
+          <p class="eyebrow">Search subscriptions</p>
+          <h2 id="plans-title">Choose the search volume that matches the campaign team.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article><span>Starter</span><h3>10 AI searches monthly</h3><p>For early brands testing influencer campaigns.</p><a href="#dashboard">Select Starter</a></article>
+          <article class="featured-plan"><span>Growth</span><h3>50 AI searches monthly</h3><p>Saved influencer lists, ongoing campaigns and campaign team workflow.</p><a href="#dashboard">Select Growth</a></article>
+          <article><span>Agency</span><h3>Unlimited searches</h3><p>Multiple team members, priority support and advanced analytics.</p><a href="#dashboard">Select Agency</a></article>
+        </div>
+      </section>
+
+      <section class="onboarding" id="creator" aria-labelledby="creator-title">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">Influencer journey</p>
+            <h2 id="creator-title">Build the creator profile brands will buy.</h2>
+            <p>Creators add profile details, social links, audience analytics, content services, pricing, revision limits, portfolio uploads, languages, niche, target audience and previous brand work.</p>
+            <div class="mini-feature-list light-list">
+              <span>Basic profile</span><span>Social links</span><span>Content types</span><span>Pricing</span><span>Portfolio</span><span>Verification</span>
+            </div>
+          </div>
+          <form class="mock-form wizard-form" data-wizard-form aria-label="Creator profile wizard">
+            <div class="wizard-tabs" role="tablist" aria-label="Creator profile steps">
+              <button class="active" type="button" data-wizard-tab="basic">Basic</button>
+              <button type="button" data-wizard-tab="social">Social</button>
+              <button type="button" data-wizard-tab="content">Content</button>
+              <button type="button" data-wizard-tab="pricing">Pricing</button>
+              <button type="button" data-wizard-tab="profile">Profile</button>
+            </div>
+            <div class="wizard-pane active" data-wizard-pane="basic">
+              <label>Full name<input placeholder="Full name"></label>
+              <label>Email<input type="email" placeholder="creator@email.com"></label>
+              <label>City<input placeholder="Mumbai"></label>
+            </div>
+            <div class="wizard-pane" data-wizard-pane="social">
+              <label>Instagram URL<input placeholder="https://instagram.com/..."></label>
+              <label>YouTube URL<input placeholder="https://youtube.com/..."></label>
+              <label>LinkedIn URL<input placeholder="https://linkedin.com/in/..."></label>
+            </div>
+            <div class="wizard-pane" data-wizard-pane="content">
+              <div class="checkbox-grid">
+                <label><input type="checkbox"> Instagram Reel</label>
+                <label><input type="checkbox"> Instagram Story</label>
+                <label><input type="checkbox"> Static Post</label>
+                <label><input type="checkbox"> UGC Video</label>
+                <label><input type="checkbox"> YouTube Short</label>
+                <label><input type="checkbox"> Event Appearance</label>
+              </div>
+            </div>
+            <div class="wizard-pane" data-wizard-pane="pricing">
+              <label>Reel price<input type="number" value="3000"></label>
+              <label>Story price<input type="number" value="1000"></label>
+              <label>Revision count<select><option>1 Revision</option><option>2 Revisions</option><option>3 Revisions</option></select></label>
+            </div>
+            <div class="wizard-pane" data-wizard-pane="profile">
+              <label>Bio<textarea rows="3" placeholder="Tell brands about your content"></textarea></label>
+              <label>Previous brand collaborations<textarea rows="3" placeholder="Brand names and campaign examples"></textarea></label>
+            </div>
+            <button class="button button-orange" type="submit">Create creator profile</button>
+            <p class="form-note" aria-live="polite"></p>
+          </form>
         </div>
       </section>
 
       <section class="checkout-flow" id="checkout" aria-labelledby="checkout-title">
         <div class="section-heading">
-          <p class="eyebrow">Protected checkout</p>
-          <h2 id="checkout-title">Cart, escrow, approval, payout.</h2>
-          <p>Add multiple creators to one campaign cart. IVRE holds the payment and releases it only after the client approves the work and verifies the live post.</p>
+          <p class="eyebrow">Escrow checkout</p>
+          <h2 id="checkout-title">Pay safely after deliverables are clear.</h2>
+          <p>Brands checkout selected creator services. IVRE holds payment until the creator accepts, submits content, the brand approves, and the post URL is verified.</p>
         </div>
-        <div class="flow-grid">
-          <article>
-            <span>01</span>
-            <h3>Buy creators</h3>
-            <p>Brands checkout through IVRE with a platform fee on the creator order total.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Auto brief</h3>
-            <p>Creator receives an automated first message asking for brand details, content type, script needs, and deliverables.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Accept or reject</h3>
-            <p>Creators get 3-4 days to accept. Rejections trigger recommended replacements so the sale is not lost.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Corrections locked</h3>
-            <p>Each creator sets correction limits while building the profile. Minimum one correction is compulsory.</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Approve work</h3>
-            <p>After correction limits are reached, approval is sent automatically and creator is asked to post.</p>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Verify post</h3>
-            <p>Creator submits the reel link. IVRE verifies it and client confirms before payout release.</p>
-          </article>
+        <div class="checkout-layout">
+          <div class="flow-grid compact-flow">
+            <article><span>01</span><h3>Brief sent</h3><p>Creator receives dashboard, email and notification request.</p></article>
+            <article><span>02</span><h3>Creator responds</h3><p>Accept, reject or ask questions inside IVRE messaging.</p></article>
+            <article><span>03</span><h3>Draft submitted</h3><p>Video, images and files are uploaded for review.</p></article>
+            <article><span>04</span><h3>Approve or revise</h3><p>Revision count is tracked and locked after the agreed limit.</p></article>
+            <article><span>05</span><h3>Verify post</h3><p>IVRE checks URL, account, platform and public visibility.</p></article>
+            <article><span>06</span><h3>Release payment</h3><p>Escrow releases after approval or dispute decision.</p></article>
+          </div>
+          <aside class="checkout-card" aria-label="Checkout summary">
+            <h3>Order summary</h3>
+            <div><span>Creator package</span><strong>Rs 8,500</strong></div>
+            <div><span>Platform fee</span><strong>Rs 850</strong></div>
+            <div><span>Taxes</span><strong>Rs 1,683</strong></div>
+            <div class="total"><span>Total held in escrow</span><strong>Rs 11,033</strong></div>
+            <a class="button button-light" href="#dashboard">Pay and create order</a>
+          </aside>
         </div>
       </section>
 
-      <section class="how-section" id="how" aria-labelledby="how-title">
+      <section class="dashboards" id="dashboard" aria-labelledby="dashboard-title">
         <div class="section-heading">
-          <p class="eyebrow">Built to prevent leakage</p>
-          <h2 id="how-title">A cleaner workflow for both sides.</h2>
+          <p class="eyebrow">Campaign dashboard</p>
+          <h2 id="dashboard-title">Orders, messages, approvals, reports and creator payouts.</h2>
+        </div>
+        <div class="dashboard-product-grid">
+          <aside class="dashboard-preview-card">
+            <img src="assets/campaign-dashboard.png" alt="IVRE campaign dashboard preview">
+          </aside>
+          <div class="dashboard-board">
+            <div class="status-board">
+              <span>Brief received</span>
+              <span>Accepted</span>
+              <span>In production</span>
+              <span>Content submitted</span>
+              <span>Revision requested</span>
+              <span>Posted</span>
+              <span>Payment released</span>
+            </div>
+            <div class="dashboard-grid compact-dashboard">
+              <article class="dashboard-card"><h3>Secure chat</h3><ul><li>Text, images, videos and documents</li><li>External emails, phone numbers and WhatsApp links moderated</li></ul></article>
+              <article class="dashboard-card"><h3>Approvals</h3><ul><li>Draft upload</li><li>Revision allowance</li><li>Approve content</li><li>Request revision</li></ul></article>
+              <article class="dashboard-card"><h3>Analytics</h3><ul><li>Reach</li><li>Engagement</li><li>Post status</li><li>Escrow release readiness</li></ul></article>
+              <article class="dashboard-card"><h3>Creator view</h3><ul><li>New opportunities</li><li>Upload drafts</li><li>Track earnings</li><li>Manage availability</li></ul></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section" id="safety" aria-labelledby="safety-title">
+        <div class="section-heading">
+          <p class="eyebrow">Trust and enforcement</p>
+          <h2 id="safety-title">Built to reduce poaching and keep both sides accountable.</h2>
         </div>
         <div class="feature-grid">
-          <article>
-            <h3>Anti-poaching layer</h3>
-            <p>Keep search, chat, payment, briefs, files, approvals, and proof links inside IVRE so brands and creators have a reason to stay on-platform.</p>
-          </article>
-          <article>
-            <h3>Live profile data</h3>
-            <p>Use social URLs and APIs to refresh followers, monthly engagement, content performance, and profile credibility.</p>
-          </article>
-          <article>
-            <h3>Subscriptions or credits</h3>
-            <p>One free search builds trust. After that, brands pay monthly or buy credits per AI search.</p>
-          </article>
-          <article>
-            <h3>Premium creators</h3>
-            <p>Influencers can pay for IVRE Premium to appear higher as sponsored or recommended creators when relevant.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="onboarding" id="creator-onboarding" aria-labelledby="onboarding-title">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">Creator onboarding</p>
-            <h2 id="onboarding-title">New to IVRE? Build the profile brands will buy.</h2>
-            <p>Creators add platforms, links, followers, content types, prices, bio, brand work, videos, correction limits, availability, and packages.</p>
-          </div>
-          <form class="mock-form" aria-label="Influencer profile form">
-            <label>Platforms & links<input value="Instagram, YouTube"></label>
-            <label>Content services<input value="Reels, stories, static posts, combo pack"></label>
-            <label>Commercial price<input value="₹3,000 per reel + platform fee"></label>
-            <label>Corrections included<input value="2 corrections"></label>
-            <label>Previous brand work<input value="Upload MP4 / add brand names"></label>
-          </form>
-        </div>
-      </section>
-
-      <section class="dashboards" id="dashboards" aria-labelledby="dashboards-title">
-        <div class="section-heading">
-          <p class="eyebrow">Dashboards</p>
-          <h2 id="dashboards-title">Separate command centers for brands and creators.</h2>
-        </div>
-        <div class="dashboard-grid">
-          <article class="dashboard-card">
-            <h3>Company dashboard</h3>
-            <ul>
-              <li>Campaign status</li>
-              <li>Creator cart and active orders</li>
-              <li>Chat and briefs</li>
-              <li>Replacement recommendations</li>
-              <li>Approval and payout buttons</li>
-            </ul>
-          </article>
-          <article class="dashboard-card">
-            <h3>Influencer dashboard</h3>
-            <ul>
-              <li>Accept or reject collaborations</li>
-              <li>Email reminders and warnings</li>
-              <li>Upload content for approval</li>
-              <li>Edit profile, prices, media</li>
-              <li>Paste live post link for verification</li>
-            </ul>
-          </article>
+          <article><h3>Anti-poaching layer</h3><p>Search, chat, briefs, files, approvals, proof links and payout controls stay inside IVRE.</p></article>
+          <article><h3>Opportunity rules</h3><p>Creators receive 24h, 48h and 72h reminders. Ignored opportunities trigger warnings and eventual suspension logic.</p></article>
+          <article><h3>Verification levels</h3><p>Identity, social ownership, audience validation, fake follower detection, verified badge and premium program.</p></article>
+          <article><h3>Replacement flow</h3><p>If a creator rejects, IVRE recommends similar creators so the brand can continue without restarting search.</p></article>
         </div>
       </section>
 
       <section class="final-cta" id="login">
         <div>
           <p class="eyebrow">IVRE platform</p>
-          <h2>India's creator marketplace, rebuilt around AI and trust.</h2>
+          <h2>India's creator marketplace, rebuilt around AI, escrow and structured workflows.</h2>
           <div class="hero-actions">
-            <a class="button button-light" href="#marketplace">Search as company</a>
-            <a class="button button-outline" href="#creator-onboarding">Join as influencer</a>
+            <a class="button button-light" href="#ai-search">Search as brand</a>
+            <a class="button button-outline" href="#creator">Join as creator</a>
           </div>
         </div>
       </section>
@@ -328,7 +364,7 @@
 
     <footer class="site-footer">
       <a class="brand-mark" href="#top">ivre</a>
-      <p>AI search. Protected payment. Real creator ROI.</p>
+      <p>AI search. Creator profiles. Escrow. Campaign approvals. Payouts.</p>
       <a href="mailto:hello@ivre.marketing">hello@ivre.marketing</a>
     </footer>
 
