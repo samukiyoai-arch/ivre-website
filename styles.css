@@ -988,12 +988,58 @@ h2 {
   box-shadow: 8px 8px 0 rgba(21, 21, 21, 0.08);
 }
 
-.module-grid img {
+.module-media {
+  position: relative;
+  height: clamp(260px, 26vw, 360px);
+  margin: 0;
+  overflow: hidden;
+  background: var(--charcoal);
+  border-bottom: 1px solid var(--line);
+}
+
+.module-media::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(21, 21, 21, 0.08), rgba(21, 21, 21, 0.48)),
+    linear-gradient(135deg, rgba(231, 71, 42, 0.42), rgba(231, 71, 42, 0.04) 58%);
+  content: "";
+}
+
+.module-media img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 1px solid var(--line);
+  filter: saturate(0.92) contrast(1.06);
+  transform: scale(1.02);
+}
+
+.module-media-brand img {
+  object-position: center 42%;
+}
+
+.module-media-creator img {
+  object-position: center 34%;
+}
+
+.module-media-operations img {
+  object-position: center 42%;
+}
+
+.module-media figcaption {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  z-index: 1;
+  max-width: calc(100% - 24px);
+  padding: 6px 8px;
+  background: rgba(21, 21, 21, 0.68);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
 }
 
 .module-grid div {
