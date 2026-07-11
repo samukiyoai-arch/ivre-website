@@ -293,14 +293,14 @@ section {
   background:
     linear-gradient(90deg, rgba(21, 21, 21, 0.78), rgba(21, 21, 21, 0.42)),
     linear-gradient(rgba(231, 71, 42, 0.28), rgba(231, 71, 42, 0.28)),
-    url("assets/hero-camera.webp") center / cover;
+    url("assets/services/street-discovery.jpeg") center 42% / cover;
 }
 
 .role-influencer::before {
   background:
     linear-gradient(90deg, rgba(21, 21, 21, 0.72), rgba(21, 21, 21, 0.46)),
     linear-gradient(rgba(231, 71, 42, 0.2), rgba(231, 71, 42, 0.2)),
-    url("assets/hero-influencer.webp") center / cover;
+    url("assets/services/payphone-creator.jpeg") center 32% / cover;
 }
 
 .role-card::after {
@@ -753,19 +753,19 @@ h2 {
 .creator-photo.fitness {
   background:
     linear-gradient(rgba(21, 21, 21, 0.08), rgba(231, 71, 42, 0.45)),
-    url("assets/production.webp") center / cover;
+    url("assets/services/street-style-campaign.jpeg") center 35% / cover;
 }
 
 .creator-photo.food {
   background:
     linear-gradient(rgba(21, 21, 21, 0.05), rgba(231, 71, 42, 0.5)),
-    url("assets/brands.webp") center / cover;
+    url("assets/services/beauty-editorial.jpeg") center 45% / cover;
 }
 
 .creator-photo.fashion {
   background:
     linear-gradient(rgba(21, 21, 21, 0.08), rgba(231, 71, 42, 0.46)),
-    url("assets/about.webp") center / cover;
+    url("assets/services/fashion-launch.jpeg") center 25% / cover;
 }
 
 .badge-row {
@@ -952,8 +952,8 @@ h2 {
   display: grid;
   min-height: 82svh;
   background:
-    linear-gradient(rgba(21, 21, 21, 0.42), rgba(21, 21, 21, 0.76)),
-    url("assets/final-cta.webp") center / cover;
+    linear-gradient(rgba(21, 21, 21, 0.34), rgba(21, 21, 21, 0.78)),
+    url("assets/services/payphone-creator.jpeg") center 34% / cover;
   color: var(--white);
   place-items: center;
   text-align: center;
@@ -1094,11 +1094,11 @@ h2 {
 }
 
 .module-media-creator img {
-  object-position: center 34%;
+  object-position: center 32%;
 }
 
 .module-media-operations img {
-  object-position: center 42%;
+  object-position: center 38%;
 }
 
 .module-media figcaption {
@@ -1137,116 +1137,6 @@ h2 {
 }
 
 .module-grid p {
-  margin: 0;
-  color: rgba(21, 21, 21, 0.68);
-  font-weight: 850;
-}
-
-.service-showcase {
-  background:
-    linear-gradient(rgba(231, 71, 42, 0.9), rgba(231, 71, 42, 0.9)),
-    var(--grid);
-  color: var(--white);
-}
-
-.service-showcase .section-heading p:not(.eyebrow) {
-  margin-right: 0;
-  margin-left: 0;
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.service-showcase .eyebrow {
-  color: var(--cream);
-}
-
-.service-card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-  width: min(1180px, 100%);
-  margin: 0 auto;
-}
-
-.service-visual-card {
-  display: grid;
-  grid-template-rows: clamp(260px, 24vw, 360px) 1fr;
-  min-height: 520px;
-  overflow: hidden;
-  background: rgba(255, 247, 244, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.42);
-  border-radius: 8px;
-  box-shadow: 10px 10px 0 rgba(21, 21, 21, 0.16);
-  color: var(--charcoal);
-}
-
-.service-visual-card:nth-child(1),
-.service-visual-card:nth-child(8) {
-  grid-column: span 2;
-}
-
-.service-visual-card img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(0.95) contrast(1.06);
-}
-
-.service-street-discovery img {
-  object-position: center 42%;
-}
-
-.service-payphone img {
-  object-position: center 32%;
-}
-
-.service-event img {
-  object-position: center 38%;
-}
-
-.service-beauty img {
-  object-position: center 45%;
-}
-
-.service-fashion img {
-  object-position: center 25%;
-}
-
-.service-street-style img {
-  object-position: center 35%;
-}
-
-.service-macro img {
-  object-position: center 40%;
-}
-
-.service-signature img {
-  object-position: center 38%;
-}
-
-.service-visual-card div {
-  padding: 20px;
-}
-
-.service-visual-card span {
-  display: block;
-  margin-bottom: 12px;
-  color: var(--orange);
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 950;
-  text-transform: uppercase;
-}
-
-.service-visual-card h3 {
-  margin: 0 0 12px;
-  font-size: clamp(24px, 2.6vw, 36px);
-  font-weight: 950;
-  line-height: 0.98;
-  text-transform: uppercase;
-}
-
-.service-visual-card p {
   margin: 0;
   color: rgba(21, 21, 21, 0.68);
   font-weight: 850;
@@ -1604,26 +1494,10 @@ h2 {
   .flow-grid,
   .pricing-grid,
   .module-grid,
-  .service-card-grid,
-  .ai-results-grid,
-  .compact-flow,
-  .compact-dashboard {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .creator-grid,
-  .flow-grid,
-  .pricing-grid,
-  .module-grid,
   .ai-results-grid,
   .compact-flow,
   .compact-dashboard {
     grid-template-columns: 1fr;
-  }
-
-  .service-visual-card:nth-child(1),
-  .service-visual-card:nth-child(8) {
-    grid-column: span 1;
   }
 
   .feature-grid,
@@ -1673,15 +1547,6 @@ h2 {
     width: 190px;
     height: 116px;
     padding: 16px;
-  }
-
-  .service-card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-visual-card {
-    grid-template-rows: 320px 1fr;
-    min-height: 0;
   }
 
   .match-card {
