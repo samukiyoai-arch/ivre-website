@@ -228,7 +228,7 @@ section {
   display: flex;
   width: 100%;
   overflow: hidden;
-  padding: 22px 0;
+  padding: 28px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -238,9 +238,9 @@ section {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 26px;
+  gap: 32px;
   min-width: max-content;
-  padding-right: 26px;
+  padding-right: 32px;
   animation: partner-scroll 50s linear infinite;
 }
 
@@ -249,9 +249,9 @@ section {
 }
 
 .partner-track img {
-  width: 220px;
-  height: 132px;
-  padding: 20px;
+  width: 280px;
+  height: 168px;
+  padding: 24px;
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.42);
   border-radius: 10px;
@@ -1537,14 +1537,14 @@ h2 {
   }
 
   .partner-track {
-    gap: 14px;
-    padding-right: 14px;
+    gap: 18px;
+    padding-right: 18px;
   }
 
   .partner-track img {
-    width: 156px;
-    height: 96px;
-    padding: 14px;
+    width: 190px;
+    height: 116px;
+    padding: 16px;
   }
 
   .match-card {
