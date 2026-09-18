@@ -1,2 +1,9 @@
 new/
 .DS_Store
+.env*
+.playwright-cli/
+company-dashboard/
+creator-marketplace/
+supabase/
+IVRE-Revision-2-Final-Plan.md
+REVISION-2-RELEASE-STATUS.md

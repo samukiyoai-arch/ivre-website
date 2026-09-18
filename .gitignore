@@ -5,3 +5,14 @@ dist
 build
 *.log
 new/
+.env
+.env.*
+!.env.example
+.playwright-cli/
+playwright-report/
+test-results/
+*.tsbuildinfo
+supabase/.temp/
+**/rzp-key*.csv
+*.pem
+*.key

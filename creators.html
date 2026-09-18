@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find Creators | IVRE</title>
+    <meta name="description" content="Search and shortlist creators for your next IVRE campaign.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="creator-directory-page">
+    <a class="skip-link" href="#marketplace">Skip to creators</a>
+    <header class="site-header">
+      <a class="brand-mark" href="index.html#top" aria-label="IVRE home">ivre</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#ai-search">AI Search</a>
+        <a href="#marketplace">Marketplace</a>
+        <a href="index.html#creator">Creators</a>
+        <a href="index.html#dashboard">Dashboard</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#plans">Plans</a>
+        <a class="nav-cta" href="index.html#roles">Join</a>
+      </div>
+    </header>
+
+    <main id="top" class="directory-main">
+      <section class="creator-market directory-market" id="marketplace" aria-labelledby="marketplace-title">
+        <form class="directory-search-form" action="creators.html" method="get" role="search">
+          <div class="directory-search-intro">
+            <span>IVRE creator search</span>
+            <label for="directorySearchInput">Find another creator</label>
+          </div>
+          <div class="directory-search-box">
+            <input id="directorySearchInput" name="search" type="search" required placeholder="Describe the creator, niche, location, audience and budget...">
+            <button type="submit">Search <span aria-hidden="true">&#8599;</span></button>
+          </div>
+        </form>
+
+        <div class="market-layout">
+          <aside class="filters" aria-label="Creator filters">
+            <h1 id="marketplace-title">Marketplace</h1>
+            <p>Describe the niche, platform, city, follower range and package budget in your search.</p>
+            <p>Your first matching search is free. Sign in to open creator profiles. Further searches require a paid plan; signing in does not reset the free allowance.</p>
+            <a class="button button-dark" data-company-cart href="https://ivre-company-dashboard.vercel.app/?page=Cart">View campaign cart</a>
+          </aside>
+
+          <div class="creator-content">
+            <div class="market-header">
+              <div>
+                <p class="eyebrow">Your next collaboration</p>
+                <h2>Find the right voice for your brand.</h2>
+                <p class="directory-query" id="directoryQuery"></p>
+              </div>
+              <a href="https://app.ivre.in/">Optional Creator Premium · ₹199/month · coming soon</a>
+            </div>
+            <div class="creator-grid product-card-grid" id="directoryResults" aria-live="polite"></div>
+            <nav id="resultPages" aria-label="Creator result pages"></nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand-mark" href="index.html#top">ivre</a>
+      <p>IVRE — operated by UKIYOAI PRIVATE LIMITED.<br>Creator discovery. Campaigns. Approvals. Payment records.</p>
+      <a href="mailto:hello@ivre.marketing">hello@ivre.marketing</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="marketplace.js" defer></script>
+  </body>
+</html>
